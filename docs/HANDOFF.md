@@ -9,9 +9,10 @@
 
 ---
 
-## STATUS ATUAL — atualizado em 17/08/2026 (v6.8.1, v6.8.2 e v6.10.0 prontas, aguardando OK para commit)
+## STATUS ATUAL — atualizado em 17/08/2026 (v6.8.1, v6.8.2 e v6.10.0 COMMITADAS e validadas)
 
-> **Preparado para continuar em OUTRO PC.** Até a v6.8.0 tudo está em `origin/feat/v5.0.0`.
+> **Preparado para continuar em OUTRO PC.** Tudo até a v6.10.0 está commitado em
+> `feat/v5.0.0` (`0e52529`, `7f9d196`, `b7da41d`) — **falta o push**.
 > O que NÃO viaja pelo git está listado em "O que copiar à mão" (fim desta seção) —
 > `mro.db`, `backups/`, `dist/` e o vault.
 
@@ -19,8 +20,8 @@
   app, cálculo nem schema — é empacotamento, então patch. **A v6.9.0 continua reservada** para a
   previsão na Requisição e a **v6.10.0** para a Análise de Consumo em PDF.
 
-- **v6.10.0 — Análise de Consumo em PDF (Assistente de Reposição). IMPLEMENTADA,
-  ⏳ AGUARDANDO VALIDAÇÃO NO APP REAL E OK PARA COMMIT.** Changelog em `changelog/6.10.0.md`.
+- **v6.10.0 — Análise de Consumo em PDF (Assistente + Ficha 360). COMMITADA (`b7da41d`) e
+  VALIDADA no app real.** Changelog em `changelog/6.10.0.md`.
   Traz para dentro do sistema o documento que o Luis gerava **à mão** (os ~30 `.docx` em
   `Analise de Consumo/`, na raiz do projeto).
 
@@ -66,8 +67,8 @@
     acrescentar dependência, instale nos DOIS interpretadores. No pacote portátil não há
     esse risco (o `pip --target` instala do próprio `requirements.txt`).
 
-- **v6.8.1 — Unidades livres do CHECK (hotfix). IMPLEMENTADA, gate verde (1117 testes),
-  ⏳ AGUARDANDO VALIDAÇÃO NO APP REAL E OK PARA COMMIT.** Changelog em `changelog/6.8.1.md`.
+- **v6.8.1 — Unidades livres do CHECK (hotfix). COMMITADA (`0e52529`) e VALIDADA no app
+  real.** Changelog em `changelog/6.8.1.md`.
   A v6.5.1 tornou Unidades uma lista mestra editável, mas o schema ainda prendia
   `inventario.unidade` aos 7 valores de sempre: salvar um item na unidade nova (ex.: **KG**)
   caía em `CHECK constraint failed`, sem mensagem útil.
@@ -80,8 +81,8 @@
     rollback explícito. A prova de que rodou em produção é o
     `…-inventario-unidade-livre` em `backups/`, nunca o app responder.
 
-- **v6.8.2 — Pacote portátil sem PyInstaller. IMPLEMENTADA, ⏳ AGUARDANDO VALIDAÇÃO NA MÁQUINA
-  REAL E OK PARA COMMIT.** Changelog em `changelog/6.8.2.md`. Começou como trabalho de outro
+- **v6.8.2 — Pacote portátil sem PyInstaller. COMMITADA (`7f9d196`) e VALIDADA.**
+  Changelog em `changelog/6.8.2.md`. Começou como trabalho de outro
   agente (o `MRO.lnk` + `criar_atalho.ps1`) e foi **completada aqui** — faltavam cinco pontas.
 
   - **⚠️ O `MRO.exe` fazia DUAS coisas além do ícone, e as duas quase se perderam:** ele

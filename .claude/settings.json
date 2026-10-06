@@ -17,6 +17,8 @@
       "Read(./mro.db.bak-*)"
     ]
   },
+  "model": "sonnet",
+  "effortLevel": "medium",
   "hooks": {
     "PostToolUse": [
       {

@@ -2,6 +2,7 @@
 name: validador-mro
 description: Valida uma mudança implementada no Sistema MRO antes do commit — roda o gate `.\verify.ps1` (format + lint + testes), confere regressão e retorna um resumo curto. Acionado pela Skill atualizar-sistema-mro no passo "Validar". Não faz commit.
 tools: Read, Grep, Glob, Bash
+model: sonnet
 ---
 
 # Subagente — Validador MRO

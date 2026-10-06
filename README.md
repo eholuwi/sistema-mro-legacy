@@ -93,6 +93,7 @@ por rota.
 | [docs/FUNCIONALIDADES.md](docs/FUNCIONALIDADES.md) | O que o sistema calcula e por quê |
 | [docs/HANDOFF.md](docs/HANDOFF.md) | Estado atual e continuidade entre sessões/máquinas |
 | [docs/INSTALACAO_SERVIDOR.md](docs/INSTALACAO_SERVIDOR.md) | Instalação no PC-servidor |
+| [docs/GERAR_PACOTE_PORTATIL.md](docs/GERAR_PACOTE_PORTATIL.md) | Gerar e instalar o pacote portátil (zip pronto pra usar) |
 | [docs/PLANO_V5_EVOLUCAO.md](docs/PLANO_V5_EVOLUCAO.md) | Plano da refatoração v5.x |
 | [docs/REGRAS_DE_NEGOCIO.md](docs/REGRAS_DE_NEGOCIO.md) | Ciclo da Requisição Digital |
 | [docs/prompt.md](docs/prompt.md) | Backlog vivo |
