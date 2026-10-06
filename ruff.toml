@@ -13,7 +13,9 @@ target-version = "py311"
 # developing-with-streamlit). Formatá-las seria desfeito na próxima reinstalação e o
 # gate acusaria de novo — o estilo do projeto não vale para código que não é nosso.
 # Os hooks (`.claude/hooks`) continuam dentro do gate: esses são do projeto.
-extend-exclude = ["venv", "graphify-out", "vault", ".claude/skills"]
+# Scripts avulsos de cotação/análise na raiz: trabalho pontual do Luis, fora do estilo
+# do projeto e não versionados — ficam de fora do lint/format. (16/10/2026)
+extend-exclude = ["venv", "graphify-out", "vault", ".claude/skills", "enriquecer_mro_scm.py", "gerar_docs_lote.py", "gerar_docs_lotes.py"]
 
 [lint]
 # RAMPA — fase 1: so erros reais, nada de estilo.
